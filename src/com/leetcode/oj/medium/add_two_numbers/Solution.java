@@ -1,6 +1,6 @@
 package com.leetcode.oj.medium.add_two_numbers;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * You are given two linked lists representing two non-negative numbers. The

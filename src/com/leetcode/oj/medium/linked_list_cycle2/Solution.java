@@ -1,6 +1,6 @@
 package com.leetcode.oj.medium.linked_list_cycle2;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * Given a linked list, return the node where the cycle begins. If there is no

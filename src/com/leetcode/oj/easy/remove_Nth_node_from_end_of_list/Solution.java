@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 
 public class Solution {
 

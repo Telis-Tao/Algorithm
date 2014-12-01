@@ -1,6 +1,6 @@
 package com.leetcode.oj.easy.path_sum;
 
-import com.leetcode.oj.maximum_depth_of_binary_tree.TreeNode;
+import com.leetcode.oj.easy.maximum_depth_of_binary_tree.TreeNode;
 
 /**
  * Given a binary tree and a sum, determine if the tree has a root-to-leaf path

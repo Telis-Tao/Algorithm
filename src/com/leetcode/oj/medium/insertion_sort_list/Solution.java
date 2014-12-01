@@ -1,7 +1,7 @@
 package com.leetcode.oj.medium.insertion_sort_list;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
 import com.leetcode.oj.tools.LinkListTools;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * Sort a linked list using insertion sort.

@@ -1,6 +1,6 @@
 package com.leetcode.oj.medium.sort_list;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 
 public class Solution {
 

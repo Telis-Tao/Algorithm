@@ -1,6 +1,6 @@
 package com.leetcode.oj.easy.symmetric_tree;
 
-import com.leetcode.oj.maximum_depth_of_binary_tree.TreeNode;
+import com.leetcode.oj.easy.maximum_depth_of_binary_tree.TreeNode;
 
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric

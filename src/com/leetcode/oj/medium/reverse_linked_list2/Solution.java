@@ -2,8 +2,8 @@ package com.leetcode.oj.medium.reverse_linked_list2;
 
 import java.util.LinkedList;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
 import com.leetcode.oj.tools.LinkListTools;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * Reverse a linked list from position m to n. Do it in-place and in one-pass.

@@ -3,7 +3,7 @@ package com.leetcode.oj.easy.minimum_depth_of_binary_tree;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.leetcode.oj.maximum_depth_of_binary_tree.TreeNode;
+import com.leetcode.oj.easy.maximum_depth_of_binary_tree.TreeNode;
 
 /**
  * Given a binary tree, find its minimum depth.

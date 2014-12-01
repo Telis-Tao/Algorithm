@@ -1,7 +1,7 @@
 package com.leetcode.oj.medium.convert_sorted_list_to_binary_search_tree;
 
 import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 import com.leetcode.oj.tools.TreeTools;
 
 /**

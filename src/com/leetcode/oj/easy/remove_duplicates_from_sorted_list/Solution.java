@@ -1,5 +1,7 @@
 package com.leetcode.oj.easy.remove_duplicates_from_sorted_list;
 
+import com.leetcode.oj.tools.ListNode;
+
 public class Solution {
 
 	/**

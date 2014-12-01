@@ -1,6 +1,6 @@
 package com.leetcode.oj.medium.reorder_list;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * Given a singly linked list L: L0¡úL1¡ú¡­¡úLn-1¡úLn, reorder it to:

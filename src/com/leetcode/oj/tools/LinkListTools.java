@@ -1,6 +1,5 @@
 package com.leetcode.oj.tools;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
 
 public class LinkListTools {
 	public static void iterList(ListNode head) {

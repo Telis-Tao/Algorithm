@@ -1,7 +1,7 @@
 package com.leetcode.oj.medium.partition_list;
 
-import com.leetcode.oj.easy.remove_duplicates_from_sorted_list.ListNode;
 import com.leetcode.oj.tools.LinkListTools;
+import com.leetcode.oj.tools.ListNode;
 
 /**
  * Given a linked list and a value x, partition it such that all nodes less than
