@@ -1,4 +1,4 @@
-package com.leetcode.oj.easy.binary_tree_level_order_traversal2;
+package com.leetcode.oj.tools;
 
 public class TreeNode {
 	public int val;

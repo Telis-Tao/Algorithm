@@ -3,7 +3,7 @@ package com.leetcode.oj.medium.validate_binary_search_tree;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
+import com.leetcode.oj.tools.TreeNode;
 
 /**
  * Given a binary tree, determine if it is a valid binary search tree (BST).

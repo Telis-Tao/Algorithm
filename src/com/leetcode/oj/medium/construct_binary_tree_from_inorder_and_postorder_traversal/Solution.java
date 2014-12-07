@@ -1,6 +1,6 @@
 package com.leetcode.oj.medium.construct_binary_tree_from_inorder_and_postorder_traversal;
 
-import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
+import com.leetcode.oj.tools.TreeNode;
 
 /**
  * Given inorder and postorder traversal of a tree, construct the binary tree.

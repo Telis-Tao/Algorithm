@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Stack;
 
-import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
+import com.leetcode.oj.tools.TreeNode;
 
 /**
  * Given a binary tree, return the zigzag level order traversal of its nodes'

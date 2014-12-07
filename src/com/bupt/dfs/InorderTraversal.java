@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
+import com.leetcode.oj.tools.TreeNode;
 
 public class InorderTraversal {
 	public static void recursive(TreeNode root, List<TreeNode> list) {

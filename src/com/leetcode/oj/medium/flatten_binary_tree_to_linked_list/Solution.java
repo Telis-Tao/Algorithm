@@ -3,7 +3,7 @@ package com.leetcode.oj.medium.flatten_binary_tree_to_linked_list;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.leetcode.oj.easy.binary_tree_level_order_traversal2.TreeNode;
+import com.leetcode.oj.tools.TreeNode;
 
 public class Solution {
 	List<Integer> list;
