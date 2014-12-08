@@ -2,7 +2,6 @@ package com.leetcode.oj.medium.threesum_closest;
 
 import java.util.Arrays;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Solution {
 	int closest;
