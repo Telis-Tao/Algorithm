@@ -29,14 +29,13 @@ public class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Solution s = new Solution();
-		// System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 1 }));
-		// System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 4, 5, 6
-		// }));
-		// System.out.println(s.findPeakElement(new int[] {
-		// 4,5,1,3,4,5,3,2,1}));
-		// System.out.println(s.findPeakElement(new int[] {
-		// 3,4,3,4,3,4,3,4,3}));
-		// System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 4, 3 }));
+		System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 1 }));
+		System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 4, 5, 6 }));
+		System.out.println(s.findPeakElement(new int[] { 4, 5, 1, 3, 4, 5, 3,
+				2, 1 }));
+		System.out.println(s.findPeakElement(new int[] { 3, 4, 3, 4, 3, 4, 3,
+				4, 3 }));
+		System.out.println(s.findPeakElement(new int[] { 1, 2, 3, 4, 3 }));
 		System.out.println(s.findPeakElement(new int[] { 3, 4, 3, 2, 1 }));
 	}
 
@@ -45,12 +44,25 @@ public class Solution {
 			return 0;
 		if (num[num.length - 1] > num[num.length - 2])
 			return num.length - 1;
-		return findPeakElement(num, 0, num.length - 1);
+		return findPeakElement(num, 1, num.length - 2);
 	}
 
 	public int findPeakElement(int[] num, int start, int end) {
-		
-		
-		
+		int half = (start + end) / 2;
+		if (num[half] > num[half - 1] && num[half] < num[half + 1]) {
+			return findPeakElement(num, half + 1, end);
+		} else if (num[half] < num[half - 1] && num[half] > num[half + 1]) {
+			return findPeakElement(num, start, half - 1);
+		} else if (num[half] < num[half - 1] && num[half] < num[half + 1]) {
+			int left = findPeakElement(num, start, half - 1);
+			int right = findPeakElement(num, half + 1, end);
+			if (left != -1)
+				return left;
+			if (right != -1)
+				return right;
+		} else {
+			return half;
+		}
+		return -1;
 	}
 }
