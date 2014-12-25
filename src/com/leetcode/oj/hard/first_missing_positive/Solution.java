@@ -1,9 +1,5 @@
 package com.leetcode.oj.hard.first_missing_positive;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Given an unsorted integer array, find the first missing positive integer.
  * 
@@ -22,57 +18,46 @@ public class Solution {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Solution().firstMissingPositive(new int[] { 1, 2, 1, 3, 4, 1, 1, 2,
-				3, 4 });
-		new Solution().firstMissingPositive(new int[] { 1, 2, 3, 4, 5, 6 });
-		new Solution().firstMissingPositive(new int[] { 1,1,1,1,1,1,1});
+		// new Solution().firstMissingPositive(new int[] { 1, 2, 3, 4, 5 });
+		// new Solution().firstMissingPositive(new int[] { 1 });
+		new Solution().firstMissingPositive(new int[] {});
+		// new Solution().firstMissingPositive(new int[] { 2, 3, 4 });
+		// new Solution().firstMissingPositive(new int[] { 1, 2, 3, 4, 5, 6 });
+		// new Solution().firstMissingPositive(new int[] { 1, 1, 1, 1, 1, 1, 1
+		// });
 	}
 
 	public int firstMissingPositive(int[] A) {
-		if (A.length < 2)
-			return 0;
-		// List<Integer> list = new ArrayList<Integer>();
-		int[] marks = new int[A.length];
-		for (int i = 1; i < A.length - 1; i++) {
-			if (A[i] >= A[i - 1] && A[i] > A[i + 1]) {
-				marks[i] = 1;
-			}
-			if (A[i] <= A[i - 1] && A[i] < A[i + 1]) {
-				marks[i] = -1;
+		int index = 0;
+		for (int i = 0; i < A.length; i++) {
+			if (A[i] > 0) {
+				A[index++] = A[i];
 			}
 		}
-		if (A[0] < A[1]) {
-			marks[0] = -1;
+		// System.out.println(Arrays.toString(A) + " : " + index);
+		// A的[0,index-1]为正数
+		// 全变成负数
+		for (int i = 0; i < index; i++) {
+			A[i] = -A[i];
 		}
-		if (A[A.length - 1] > A[A.length - 2]) {
-			marks[A.length - 1] = 1;
+		// System.out.println(Arrays.toString(A));
+		// 核心部分：
+		// 如果A[i]的值处在[1,index]之间，那么将相应位置上的A[i]变成正数
+		for (int i = 0; i < index; i++) {
+			int temp = Math.abs(A[i]);
+			if (temp > 0 && temp <= index) {
+				if (A[temp - 1] < 0)
+					A[temp - 1] = -A[temp - 1];
+			}
 		}
-//		System.out.println(Arrays.toString(marks));
-		firstMissingPositive(A, -1, 0, 0, marks);
-//		System.out.println(result);
-		return 0;
-
+		// 第一个出现的负数所代表的i位置+1即为最初出现的正数，如果都没有，那么就说明最后没出来的正数的值为index+1
+		for (int i = 0; i < index; i++) {
+			if (A[i] < 0) {
+				// System.out.println(i + 1);
+				return i + 1;
+			}
+		}
+		return index + 1;
 	}
 
-	public void firstMissingPositive(int[] A, int end, int count, int sum,
-			int[] marks) {
-		if (count < 2) {
-			result = Math.max(result, sum);
-			for (int i = end + 1; i < A.length; i++) {
-				if (marks[i] == -1) {
-					for (int j = i + 1; j < marks.length; j++) {
-						if (marks[j] == 1) {
-							int temp = A[j] - A[i] + sum;
-							// System.out.println("i:"+i+" j:"+j+" sum:"+temp);
-							firstMissingPositive(A, j, count + 1, temp, marks);
-						}
-					}
-				}
-
-			}
-		}
-		if (count == 2) {
-			result = Math.max(result, sum);
-		}
-	}
 }

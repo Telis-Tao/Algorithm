@@ -3,8 +3,6 @@ package com.bupt.bfs;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
-
 import com.leetcode.oj.tools.TreeNode;
 
 public class BreadthFirstSearch {
