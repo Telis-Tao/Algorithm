@@ -1,10 +1,7 @@
 package com.leetcode.oj.medium.word_ladder;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * Given two words (start and end), and a dictionary, find the length of

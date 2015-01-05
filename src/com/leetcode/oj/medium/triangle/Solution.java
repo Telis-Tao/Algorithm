@@ -1,10 +1,7 @@
 package com.leetcode.oj.medium.triangle;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * Given a triangle, find the minimum path sum from top to bottom. Each step you

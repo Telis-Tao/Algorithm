@@ -1,10 +1,5 @@
 package com.leetcode.oj.medium.longest_substring_without_repeating_characters;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * Given a string, find the length of the longest substring without repeating
  * characters. For example, the longest substring without repeating letters for

@@ -1,7 +1,5 @@
 package com.leetcode.oj.hard.wildcard_matching;
 
-import com.sun.org.apache.bcel.internal.generic.LSTORE;
-
 /**
  * Implement wildcard pattern matching with support for '?' and '*'.
  * 
@@ -27,68 +25,67 @@ public class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Solution s = new Solution();
-		System.out.println(s.isMatch("aa", "*a"));
+		System.out.println(s.isMatch("aa", "a"));
 	}
 
 	public boolean isMatch(String s, String p) {
-		// System.out.print(s + "," + p + ":");
-		int formerSig = 0;
-		int lastSig = 0;// 0:other, 1:* ,2:?
-		int index = 0;
-		for (int i = 0; i < p.length(); i++) {
-			if (p.charAt(i) == '?') {
-				formerSig = lastSig;
-				lastSig = 2;
-				index++;
-			} else if (p.charAt(i) == '*') {
-				formerSig = lastSig;
-				lastSig = 1;
-			} else {
-				if (index >= s.length()) {
-					return false;
-				}
-				if (lastSig == 1) {
-					formerSig = lastSig;
-					lastSig = 0;
-					while (index < s.length()) {
-						if (s.charAt(index++) == p.charAt(i)) {
-							break;
-						}
-					}
-					if (index > s.length()) {
-						return false;
-					}
-				} else {
-					if (s.charAt(index) == p.charAt(i)) {
-						index++;
-					} else {
-						return false;
-					}
-				}
-			}
-		}
-		if (lastSig == 1) {
-			if (index <= s.length()) {
-				return true;
-			} else {
-				return false;
-			}
-			// return true;
-		}
-		if (lastSig == 2) {
-			if (formerSig == 1) {
-				if (index <= s.length())
-					return true;
-			}
-			if (index == s.length()) {
-				return true;
+		int left = 0;
+		int right = 0;
+		int start = -1;
+		int match = 0;
+		while (left < s.length()) {
+			if (right < p.length()
+					&& (p.charAt(right) == s.charAt(left) || p.charAt(right) == '?')) {
+				left++;
+				right++;
+			} else if (right < p.length()&&p.charAt(right) == '*') {
+				start = right;
+				match = left;
+				right++;
+			} else if (start != -1) {
+				right = start + 1;
+				match++;
+				left = match;
 			} else {
 				return false;
 			}
 		}
-		if (lastSig == 0) {
-			
+		while (right < p.length() && p.charAt(right) == '*') {
+			right++;
 		}
-		return false;
+		return right == p.length();
 	}
+	// public boolean isMatch(String s, String p) {
+	// // System.out.print(s + "," + p + ":");
+	// int sIndex = 0, pIndex = 0, match = 0, starIdx = -1;
+	// while (sIndex < s.length()){
+	// // advancing both pointers
+	// if (pIndex < p.length() && (p.charAt(pIndex) == '?' || s.charAt(sIndex)
+	// == p.charAt(pIndex))){
+	// sIndex++;
+	// pIndex++;
+	// }
+	// // * found, only advancing pattern pointer
+	// else if (pIndex < p.length() && p.charAt(pIndex) == '*'){
+	// starIdx = pIndex;
+	// match = sIndex;
+	// pIndex++;
+	// }
+	// // last pattern pointer was *, advancing string pointer
+	// else if (starIdx != -1){
+	// pIndex = starIdx + 1;
+	// match++;
+	// sIndex = match;
+	// }
+	// //current pattern pointer is not star, last patter pointer was not *
+	// //characters do not match
+	// else return false;
+	// }
+	//
+	// //check for remaining characters in pattern
+	// while (pIndex < p.length() && p.charAt(pIndex) == '*')
+	// pIndex++;
+	//
+	// return pIndex == p.length();
+	// }
 }

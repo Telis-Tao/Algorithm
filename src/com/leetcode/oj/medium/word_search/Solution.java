@@ -1,7 +1,5 @@
 package com.leetcode.oj.medium.word_search;
 
-import java.util.Arrays;
-
 /**
  * Given a 2D board and a word, find if the word exists in the grid.
  * 

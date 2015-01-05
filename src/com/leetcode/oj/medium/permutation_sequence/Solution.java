@@ -1,10 +1,5 @@
 package com.leetcode.oj.medium.permutation_sequence;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
-
 /**
  * The set [1,2,3,бн,n] contains a total of n! unique permutations.
  * 

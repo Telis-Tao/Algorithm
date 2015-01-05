@@ -1,9 +1,6 @@
 package com.leetcode.oj.medium.rotate_list;
 
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-
 import com.leetcode.oj.tools.LinkListTools;
 import com.leetcode.oj.tools.ListNode;
 

@@ -2,7 +2,6 @@ package com.leetcode.oj.medium.two_sum;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.TreeMap;
 
 /**
  * Given an array of integers, find two numbers such that they add up to a

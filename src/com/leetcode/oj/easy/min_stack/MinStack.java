@@ -1,9 +1,6 @@
 package com.leetcode.oj.easy.min_stack;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
-import java.util.TreeMap;
 
 /**
  * Design a stack that supports push, pop, top, and retrieving the minimum

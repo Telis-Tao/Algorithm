@@ -2,14 +2,12 @@ package com.leetcode.oj.medium.four_sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 /**
  * Given an array S of n integers, are there elements a, b, c, and d in S such

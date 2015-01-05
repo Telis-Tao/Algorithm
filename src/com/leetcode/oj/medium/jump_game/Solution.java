@@ -1,9 +1,5 @@
 package com.leetcode.oj.medium.jump_game;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Given an array of non-negative integers, you are initially positioned at the
  * first index of the array.

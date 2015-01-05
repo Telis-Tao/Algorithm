@@ -5,8 +5,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 import com.leetcode.oj.tools.TreeNode;
 
 /**

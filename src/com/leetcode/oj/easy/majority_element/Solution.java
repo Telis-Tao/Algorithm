@@ -1,7 +1,5 @@
 package com.leetcode.oj.easy.majority_element;
 
-import java.util.Arrays;
-
 /**
  * Given an array of size n, find the majority element. The majority element is
  * the element that appears more than ⌊ n/2 ⌋ times.

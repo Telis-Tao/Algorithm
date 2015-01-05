@@ -1,7 +1,6 @@
 package com.leetcode.oj.medium.restore_ip_addresses;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Solution {

@@ -1,7 +1,5 @@
 package com.leetcode.oj.easy.sort_colors;
 
-import java.util.Arrays;
-
 /**
  * Given an array with n objects colored red, white or blue, sort them so that
  * objects of the same color are adjacent, with the colors in the order red,

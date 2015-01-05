@@ -1,13 +1,8 @@
 package com.leetcode.oj.medium.binary_tree_zigzag_level_order_traversal;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Stack;
-
 import com.leetcode.oj.tools.TreeNode;
 
 /**

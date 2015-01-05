@@ -1,7 +1,6 @@
 package com.leetcode.oj.medium.generate_parentheses;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

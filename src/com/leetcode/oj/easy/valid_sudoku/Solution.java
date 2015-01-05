@@ -1,6 +1,5 @@
 package com.leetcode.oj.easy.valid_sudoku;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 

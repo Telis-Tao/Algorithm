@@ -1,7 +1,6 @@
 package com.leetcode.oj.medium.letter_combinations_of_a_phone_number;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

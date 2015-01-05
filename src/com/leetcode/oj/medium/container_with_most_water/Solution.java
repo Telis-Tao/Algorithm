@@ -1,11 +1,5 @@
 package com.leetcode.oj.medium.container_with_most_water;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-
 /**
  * Given n non-negative integers a1, a2, ..., an, where each represents a point
  * at coordinate (i, ai). n vertical lines are drawn such that the two endpoints

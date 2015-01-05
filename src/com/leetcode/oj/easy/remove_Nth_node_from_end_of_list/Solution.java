@@ -1,11 +1,6 @@
 package com.leetcode.oj.easy.remove_Nth_node_from_end_of_list;
 
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
-
 import com.leetcode.oj.tools.ListNode;
 
 public class Solution {

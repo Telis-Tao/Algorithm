@@ -1,7 +1,5 @@
 package com.leetcode.oj.hard.reverse_nodes_in_k_group;
 
-import org.jgroups.blocks.Link;
-
 import com.leetcode.oj.tools.LinkListTools;
 import com.leetcode.oj.tools.ListNode;
 

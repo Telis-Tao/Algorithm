@@ -1,7 +1,5 @@
 package com.leetcode.oj.medium.reverse_linked_list2;
 
-import java.util.LinkedList;
-
 import com.leetcode.oj.tools.LinkListTools;
 import com.leetcode.oj.tools.ListNode;
 

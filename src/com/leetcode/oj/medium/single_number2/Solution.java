@@ -1,8 +1,5 @@
 package com.leetcode.oj.medium.single_number2;
 
-import java.math.BigInteger;
-import java.util.Arrays;
-
 /**
  * Given an array of integers, every element appears three times except for one.
  * Find that single one.

@@ -1,8 +1,5 @@
 package com.leetcode.oj.medium.unique_binary_search_trees;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Solution {
 
 	/**

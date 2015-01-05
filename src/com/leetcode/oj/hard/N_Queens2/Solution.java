@@ -1,8 +1,5 @@
 package com.leetcode.oj.hard.N_Queens2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Follow up for N-Queens problem.
  * 

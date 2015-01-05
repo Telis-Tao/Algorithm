@@ -1,7 +1,6 @@
 package com.leetcode.oj.medium.convert_sorted_Array_to_binary_search_tree;
 
 import com.leetcode.oj.tools.TreeNode;
-import com.leetcode.oj.tools.TreeTools;
 
 /**
  * Given an array where elements are sorted in ascending order, convert it to a

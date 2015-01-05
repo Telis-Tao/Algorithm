@@ -1,10 +1,7 @@
 package com.leetcode.oj.hard.maximum_gap;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
 
 /**
  * Given an unsorted array, find the maximum difference between the successive
@@ -61,7 +58,7 @@ public class Solution {
 			list.add(new Buc());
 		}
 		for (int i = 0; i < num.length; i++) {
-			list.get((int) (num[i] - min) / len).add(num[i]);
+			list.get((num[i] - min) / len).add(num[i]);
 		}
 		// System.out.println(list);
 		max = 0;

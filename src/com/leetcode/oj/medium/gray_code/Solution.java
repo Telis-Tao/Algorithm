@@ -1,10 +1,7 @@
 package com.leetcode.oj.medium.gray_code;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * The gray code is a binary numeral system where two successive values differ

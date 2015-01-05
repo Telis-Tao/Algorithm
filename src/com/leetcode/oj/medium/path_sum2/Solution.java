@@ -1,7 +1,6 @@
 package com.leetcode.oj.medium.path_sum2;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import com.leetcode.oj.tools.TreeNode;

@@ -1,8 +1,5 @@
 package com.leetcode.oj.medium.best_time_to_buy_and_sell_stock;
 
-import java.util.Set;
-import java.util.TreeSet;
-
 /**
  * Say you have an array for which the ith element is the price of a given stock
  * on day i.

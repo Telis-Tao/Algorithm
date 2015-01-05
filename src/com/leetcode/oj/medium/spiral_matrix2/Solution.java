@@ -1,7 +1,5 @@
 package com.leetcode.oj.medium.spiral_matrix2;
 
-import com.leetcode.oj.tools.ArrayTools;
-
 /**
  * Given an integer n, generate a square matrix filled with elements from 1 to
  * n2 in spiral order.

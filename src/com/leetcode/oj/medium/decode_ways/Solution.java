@@ -1,12 +1,5 @@
 package com.leetcode.oj.medium.decode_ways;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
 /**
  * A message containing letters from A-Z is being encoded to numbers using the
  * following mapping:

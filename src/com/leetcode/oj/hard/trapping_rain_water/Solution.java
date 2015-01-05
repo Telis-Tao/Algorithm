@@ -1,12 +1,5 @@
 package com.leetcode.oj.hard.trapping_rain_water;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.TreeMap;
-
-import com.sun.xml.internal.ws.api.pipe.NextAction;
-
 /**
  * Given n non-negative integers representing an elevation map where the width
  * of each bar is 1, compute how much water it is able to trap after raining.
