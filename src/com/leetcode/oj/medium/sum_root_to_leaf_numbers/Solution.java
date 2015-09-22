@@ -46,7 +46,7 @@ public class Solution {
 	public int sumNumbers(TreeNode root) {
 		if(root==null)
 			return 0;
-		LinkedList<String> linkList = new LinkedList<>();
+		LinkedList<String> linkList = new LinkedList<String>();
 		List<Integer> list = new ArrayList<Integer>();
 		sumNumbers(root, linkList, list);
 //		System.out.println(list);

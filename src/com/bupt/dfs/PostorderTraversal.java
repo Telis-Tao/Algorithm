@@ -19,7 +19,7 @@ public class PostorderTraversal {
 		List<TreeNode> list = new ArrayList<TreeNode>();
 		if (root == null)
 			return list;
-		Stack<TreeNode> stack = new Stack<>();
+		Stack<TreeNode> stack = new Stack<TreeNode>();
 		stack.add(root);
 		while (!stack.isEmpty()) {
 			TreeNode node = stack.peek();

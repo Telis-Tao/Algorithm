@@ -3,7 +3,6 @@ package com.leetcode.oj.medium.binary_search_tree_iterator;
 import java.util.Stack;
 
 import com.leetcode.oj.tools.TreeNode;
-import com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck;
 
 /**
  * Implement an iterator over a binary search tree (BST). Your iterator will be
@@ -40,7 +39,7 @@ public class BSTIterator {
 	}
 
 	/**
-	 * Õâ¸öÆäÊµ¾ÍÊÇÓÃÕ»µÄ·½·¨ÊµÏÖÒ»¸öÖÐÐò±éÀú¡£¡£¡£ºÜ¼òµ¥¡£¡£¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½Ä·ï¿½ï¿½ï¿½Êµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼òµ¥¡ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param root
 	 */
