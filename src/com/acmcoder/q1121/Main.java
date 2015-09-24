@@ -1,4 +1,4 @@
-package com.acmcoder.q1001;
+package com.acmcoder.q1121;
 
 import java.util.Scanner;
 
