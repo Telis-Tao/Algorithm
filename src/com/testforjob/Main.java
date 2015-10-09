@@ -1,7 +1,8 @@
 package com.testforjob;
 
+import java.util.List;
 import java.util.Scanner;
-import java.util.WeakHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by taoxiaoqing on 15/9/20.
@@ -10,20 +11,35 @@ public class Main {
     public static void main(String[] args) {
 //        System.out.println(solution());
 //        B b = new B();
-        WeakHashMap wMap = new WeakHashMap();
-        wMap.put("张三", "zs");
-        wMap.put("李四", "ls");
-        //gc,不保证运行
-        try {
-            System.gc();
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+//        WeakHashMap wMap = new WeakHashMap();
+//        wMap.put("张三", "zs");
+//        wMap.put("李四", "ls");
+//        //gc,不保证运行
+//        try {
+//            System.gc();
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        for (Object o : wMap.entrySet()) {
+//            System.out.println(o);
+//        }
+        List<Integer> list = new CopyOnWriteArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            list.add(i+1);
         }
-
-        for (Object o : wMap.entrySet()) {
-            System.out.println(o);
+//        for (Iterator<Integer> i = list.iterator(); i.hasNext(); ) {
+//            for (Iterator<Integer> j = list.iterator(); j.hasNext(); ) {
+//                System.out.println(i.next()+"-"+j.next());
+//            }
+//        }
+        for (Integer integer : list) {
+            if(integer.equals(3)){
+                list.remove(integer);
+            }
         }
+        System.out.println(list);
     }
 
     public static String solution() {
