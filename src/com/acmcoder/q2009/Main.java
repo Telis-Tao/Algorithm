@@ -17,5 +17,6 @@ public class Main {
             System.out.println(String.format("%.2f", sum));
         }
     }
+
 }
 

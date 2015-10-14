@@ -35,12 +35,13 @@ public class MergeSort {
 		}
 	}
 
-	// ╤тря╬╜еепР╣да╫╦ЖйЩвИ©ирт╫Ьпп╣деепР
+	// О©╫О©╫О©╫я╬О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫т╫О©╫О©╫п╣О©╫О©╫О©╫О©╫О©╫
 	public void mergeSort(int[] nums, int start, int end, int[] temp) {
 		int half = (start + end) / 2;
 		int left = start;
 		int right = half + 1;
 		int current = start;
+		String str  = "";
 		// System.out.println("mergeSort:" + start + " " + half + " " + end);
 		while (left <= half && right <= end) {
 			if (nums[left] > nums[right]) {
