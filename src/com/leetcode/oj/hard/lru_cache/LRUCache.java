@@ -1,45 +1,87 @@
 package com.leetcode.oj.hard.lru_cache;
 
-import java.util.*;
-import java.util.concurrent.LinkedBlockingDeque;
+import java.util.HashMap;
+import java.util.Map;
 
 class LRUCache {
-    Queue<Integer> list;
-    Map<Integer, Integer> data;
+    private Map<Integer, Node> data;
+    private int capacity;
 
     public LRUCache(int capacity) {
-        list = new LinkedBlockingDeque<>(capacity);
         data = new HashMap<>(capacity);
+        this.capacity = capacity;
     }
 
     public int get(int key) {
         if (data.containsKey(key)) {
-            fresh(key);
-        }else{
-            Integer removeKey = list.poll();
-            data.remove(removeKey);
-            list.add(key);
-            data.put(key);
+            Node node = data.get(key);
+            delete(node);
+            insert(node);
+            return node.value;
         }
+        return -1;
     }
 
     public void put(int key, int value) {
-        if (list.contains(key)) {
-            list.remove(key);
-            list.add(key);
+        if (data.containsKey(key)) {
+            Node node = data.get(key);
+            delete(node);
+            insert(node);
+            node.value = value;
+        } else {
+            Node node = new Node();
+            node.key = key;
+            node.value = value;
+            if (data.size() < capacity) {//not full
+                insert(node);
+                data.put(key, node);
+            } else {
+                Node oldNode = tail;
+                delete(oldNode);
+                data.remove(oldNode.key);
+                insert(node);
+                data.put(key, node);
+            }
         }
     }
 
 
-    private void fresh(int key) {
-        Iterator<Integer> it = list.iterator();
-        while (it.hasNext()) {
-            Integer tmpKey = it.next();
-            if (tmpKey == key) {
-                it.remove();
-                break;
-            }
+    private Node head = null;
+    private Node tail = null;
+
+    private void insert(Node node) {
+        if (head == null) {
+            head = tail = node;
+        } else {
+            clear(node);
+            node.next = head;
+            head.previous = node;
+            head = node;
         }
-        list.add(key);
+    }
+
+    private void delete(Node node) {
+        if (node == head) {
+            head = head.next;
+        } else if (node == tail) {
+            tail.previous.next = null;
+            tail = tail.previous;
+        } else {
+            node.previous.next = node.next;
+            node.next.previous = node.previous;
+        }
+        clear(node);
+    }
+
+    private void clear(Node node) {
+        node.next = null;
+        node.previous = null;
+    }
+
+    class Node {
+        int key;
+        int value;
+        Node previous;
+        Node next;
     }
 }
